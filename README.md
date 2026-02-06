@@ -36,28 +36,32 @@ All feature engineering, modeling, and evaluation steps rely on these Yelp table
 
 ---
 
-### 2. External Data (Must Be Downloaded Separately)
+### 2. External Data (Google Trends & Google Places)
 
-Two external datasets are **essential** and are **not part of the Yelp dataset**:
+Two external datasets are **essential** for parts of the analysis and are **not part of the Yelp dataset**:
 
 - **Google Trends – restaurant-related search interest**
 - **Google Places – cross-platform restaurant information**
 
-These datasets are required for:
+These datasets are used for:
 - Descriptive analysis of external digital attention
 - Cross-platform validation
 - Robustness checks
 
-⚠️ **It is crucial to download or recreate these two tables separately** in order to fully reproduce the analysis.
+> Due to licensing and redistribution restrictions, the Google Trends and Google Places tables are **not provided** in this repository.  
+> However, the included **Python and R scripts document the full data collection process**, and it should be possible to recreate these tables by rerunning the corresponding code if needed.
 
+⚠️ **Recreating these tables is required for full reproducibility of the descriptive and robustness analyses.**
+
+---
 
 ## Running the Code
 
 - Scripts are intended to be run **sequentially**, following their numbering.
 - File paths may need to be adjusted to match your local directory structure.
 - The code assumes that required tables are available either via:
-  - Your own Yelp data extraction, **or**
-  - The provided `tables (FULL)` folder.
+  - Your own Yelp data extraction, **and**
+  - Recreated Google Trends and Google Places tables.
 
 ---
 
