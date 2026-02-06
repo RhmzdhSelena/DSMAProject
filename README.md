@@ -50,22 +50,6 @@ These datasets are required for:
 
 ⚠️ **It is crucial to download or recreate these two tables separately** in order to fully reproduce the analysis.
 
----
-
-### 3. Fully Prepared Tables (For Reproducibility)
-
-To ensure that the code can be executed **without rebuilding the entire pipeline**, the repository includes:
-
-- **`tables (FULL)/`**
-
-This folder contains **all intermediate and final tables** required for the scripts to run end-to-end, including:
-- Feature-engineered datasets
-- Modeling inputs
-- Final analytical tables
-
-Using this folder allows the project to be reproduced **without re-running the full Yelp data extraction and preprocessing steps**.
-
----
 
 ## Running the Code
 
